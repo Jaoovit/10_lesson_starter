@@ -9,7 +9,7 @@
         <link rel="icon" href="/favicon.ico">
     </head>
     <body>
-        <section id="#topContactUs"></section>
+        <section id="#topContactUs">
         <h1>Contact US</h1>
         <nav>
             <ul>
@@ -29,5 +29,31 @@
         </nav>
         <img src="/img/tacos_close_up_400x260.png" alt="Tacos Close Up">
         <p>Little Taco Shop Tacos</p>
+        </section>
+
+        <section id="ourContactForm">
+            <h1>Our Contact Forml</h1>       
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Send Us a Message</legend>
+                <p>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name"
+                placeholder="your name">
+                </p>
+                <p>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email"
+                placeholder="your email">
+                </p>
+                <p>
+                <label for="yourMessage">Your Message:</label>
+                <br>
+                <input type="text" name="message" id="messageBox"
+                placeholder="Type your message here">
+                </p>
+                </fieldset>
+            </form>         
+        </section>
     </body>
 </html>
