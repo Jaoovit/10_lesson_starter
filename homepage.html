@@ -59,13 +59,16 @@
             <h1>Our Menu</h1>
             <table>
                 <caption>Our Tacos</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Tacos</th>
+                        <th scope="col"><abbr title="quantity">Qty</abbr></th>
+                        <th scope="col">price</th>
+                    </tr>
+                </thead>
+                <tbody>
                 <tr>
-                    <th>Tacos</th>
-                    <th><abbr title="quantity">Qty</abbr></th>
-                    <th>price</th>
-                </tr>
-                <tr>
-                    <th rowspan="3">Crunchy</th>
+                    <th scope="row" rowspan="3">Crunchy</th>
                     <td>1</td>
                     <td>$1.50</td>
                 </tr>
@@ -78,7 +81,7 @@
                     <td>$3.25</td>
                 </tr>
                 <tr>
-                    <th rowspan="3">Soft</th>
+                    <th scope="row" rowspan="3">Soft</th>
                     <td>1</td>
                     <td>$2.00</td>
                 </tr>
@@ -90,7 +93,12 @@
                     <td>3</td>
                     <td>$4.50</td>
                 </tr>
-                <td colspan="3">Chips & Salsa $2</td> 
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Chips & Salsa $2</td>
+                    </tr>
+                </tfoot>
             </table>
         </section>
         <br>
